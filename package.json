@@ -14,12 +14,12 @@
   "dependencies": {
     "archiver": "^2.0.3",
     "command-line-args": "^4.0.7",
-    "fs-extra": "^4.0.2"
+    "fs-extra": "^4.0.2",
     "@babel/helper-module-imports": "^7.0.0-beta.44",
     "vue": "^2.5.16"
   },
   "devDependencies": {
     "@neutrinojs/vue": "^8.2.1",
-    "neutrino": "^8.2.1"
+    "neutrino": "^8.3.0"
   }
 }
