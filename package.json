@@ -1,24 +1,25 @@
 {
-  "name": "safe_examples",
-  "version": "0.1.0",
-  "description": "SAFE Network example applications",
+  "name": "safe_web_app_quick_start",
+  "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:maidsafe/safe_examples.git",
+  "license": "MIT",
   "scripts": {
-    "install-all": "cd email_app && yarn && cd .. && cd web_hosting_manager && yarn",
-    "package-all": "yarn pack:email && yarn pack:webhosting",
-    "update-email-safe-deps": "cd email_app && npm install @maidsafe/safe-node-app@latest --save",
-    "update-webhosting-safe-deps": "cd web_hosting_manager/app && npm install @maidsafe/safe-node-app@latest --save",
-    "update-safe-deps": "yarn update-webhosting-safe-deps && yarn update-email-safe-deps",
-    "pack:webhosting": "cd web_hosting_manager && yarn package && yarn post-package",
-    "post-pack:webhosting": "cd web_hosting_manager && yarn post-package",
-    "pack:email": "cd email_app && yarn package && yarn post-package",
-    "post-pack:email": "cd email_app && yarn post-package",
-    "test": "echo \"No test specified\" && exit 0"
+    "build": "neutrino build",
+    "start": "neutrino start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maidsafe/safe_examples"
   },
   "dependencies": {
     "archiver": "^2.0.3",
     "command-line-args": "^4.0.7",
     "fs-extra": "^4.0.2"
+    "@babel/helper-module-imports": "^7.0.0-beta.44",
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "@neutrinojs/vue": "^8.2.1",
+    "neutrino": "^8.2.1"
   }
 }
